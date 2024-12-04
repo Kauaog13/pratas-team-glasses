@@ -6,8 +6,7 @@
     <title>Produto - Loja</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../public/assets/css/estilo.css">
-    <link rel="stylesheet" href="/pratas-da-mafia/frontend/public/assets/css/produtos.css">
+    <link rel="stylesheet" href="/pratas-da-mafia/frontend/public/assets/css/estilo.css">
 </head>
 <body>
     <!-- Inclui o Cabeçalho -->
@@ -27,13 +26,15 @@
                 <p id="textos" class="text-muted">Conjuntos</p>
                 <h3 class="text-success">R$ 454,32</h3>
 
-                <p id="textos" class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non urna leo. Cras dapibus risus non metus pharetra, eu dictum turpis sollicitudin.</p>
+               <p id="textos" class="mt-4" >Exiba estilo e sofisticação com o conjunto Grumet 1x1. Um clássico indispensável, perfeito para quem busca elegância e durabilidade em um design marcante.</p>
 
                 <ul id="textos">
                     <strong id="titulos" >Características:</strong>
-                    <li>Material resistente e durável</li>
-                    <li>Design moderno e elegante</li>
-                    <li>Disponível nas cores preto e branco</li>
+                    <li> <b>Modelo:</b>  Grumet 1x1</li>
+                    <li> <b>Material: </b> Prata 925 legítima</li>
+                    <li> <b> Corrente:</b> 70cm de comprimento, 6mm de espessura</li>
+                    <li> <b>Pulseira:</b>  21cm de comprimento, 6mm de espessura</li>
+                    <li> <b>Fecho:</b> Tipo mosquete </li>
                 </ul>
                 <hr>
                 <div class="mt-4">
@@ -41,22 +42,26 @@
                     <input type="number" id="quantidade" class="form-control" value="1" min="1" max="10" style="width: 50px; height: 35px;">
                 </div>
 
-                <button  class="btn btn-primary mt-4 w-100" style="background-color:#262626; border: black ; border-radius: 12px;" >Adicionar ao Carrinho</button>
-                <button  class="btn btn-secondary mt-2 w-100" style="background-color: #a6a6a6; border: white; border-radius: 12px;">Comprar Agora</button>
+                <button  class="btn btn-primary mt-4 w-100" id="botao" style="background-color:#262626; border: black ; border-radius: 12px;"  onmouseover="this.style.background='black'" onmouseout="this.style.background='#262626'" >Adicionar ao Carrinho</button>
+                <button  class="btn btn-secondary mt-2 w-100" id="botao" style="background-color: #a6a6a6; border: white; border-radius: 12px;"  onmouseover="this.style.background='#8a8a8a'" onmouseout="this.style.background='#a6a6a6'">Comprar Agora</button>
             </div>
         </div>
 
         <!-- Descrição Detalhada -->
         <section class="mt-5">
             <h4 id="titulos">Descrição Detalhada</h4>
-            <p id="textos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non urna leo. Cras dapibus risus non metus pharetra, eu dictum turpis sollicitudin. Donec euismod, libero ac elementum faucibus, ante leo volutpat metus, sed accumsan erat orci sed lorem. Etiam tincidunt dui sed orci sollicitudin, eu dictum purus blandit. Nunc tempor sem vel mauris suscipit, ac volutpat risus tincidunt. Integer ornare vel lectus at fermentum.</p>
+            <p id="textos"> Para quem valoriza estilo e autenticidade, o Conjunto Grumet 1x1 6mm é mais que um acessório, é uma declaração de poder e personalidade. Com design robusto e acabamento impecável, este conjunto reflete a essência da Pratas da Máfia: joias feitas para quem domina o próprio caminho.
+
+                Composto por uma corrente de 70cm e uma pulseira de 21cm, ambas em prata de alta qualidade, o conjunto oferece brilho duradouro e resistência que acompanham qualquer ocasião, do casual ao sofisticado. Perfeito para destacar seu visual com a ousadia e a elegância que você merece.
+            </p>    
+            <p style="font-style: italic;">Pratas da Máfia: estilo que impõe respeito.</p>
         </section>
 
         <!-- Avaliações -->
         <section class="mt-5">
             <h4 id="titulos">Avaliações</h4>
             <p id="textos">Não há avaliações para este produto ainda. Seja o primeiro a avaliar!</p>
-            <button class="btn btn-outline-primary" style="color: white ;background-color: #a6a6a6; border: white; border-radius: 12px;">Deixar uma Avaliação</button>
+            <button class="btn btn-outline-primary" id="botao" style="color: white ;background-color: #a6a6a6; border: white; border-radius: 12px;" onmouseover="this.style.background='#8a8a8a'" onmouseout="this.style.background='#a6a6a6'">Deixar uma Avaliação</button>
         </section>
     </main>
 
@@ -85,6 +90,39 @@
     color: var(--preto);
     font-size: 15px;
 }
+
+body{ 
+    background-image: url('/pratas-da-mafia/frontend/public/assets/img/Wallpapers/white-simple-textured-design-background.jpg');
+    font-family: 'Poppins', sans-serif; /* Fonte padrão */
+}
+    /* Adiciona efeito de hover nos botões */
+ .btn:hover {
+    transform: scale(0.95);
+    transition: 0.5s;
+}
+
+    /* Efeito de hover específico para o botão de adicionar ao carrinho */
+    .btn-primary:hover {
+        background-color: #1a1a1a;
+        border: #1a1a1a;
+    }
+
+    /* Efeito de hover específico para o botão de comprar agora */
+    .btn-secondary:hover {
+        background-color: #8a8a8a;
+        border: #8a8a8a;
+    }
+
+    /* Efeito de hover específico para o botão de deixar uma avaliação */
+    .btn-outline-primary:hover {
+        background-color: #8a8a8a;
+        border: #8a8a8a;
+        color: #fff;
+    }
+    .btn-primary-links:hover{
+        background-color: aqua !important;
+    }
+
     </style>
 </html>
 
