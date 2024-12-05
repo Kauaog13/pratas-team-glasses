@@ -13,14 +13,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("/pratas-da-mafia/frontend/public/assets/img/Logos/Wallpapers/wallpaper 02.png") repeat;
-    background-size: contain;
+    background: url("/pratas-da-mafia/frontend/public/assets/img/Logos/Wallpapers/wallpaper-03.png") no-repeat;
+    background-size: cover;
     background-position:left center;
     background-color: black;
 }
 
 .wrapper {
-    width: 420px;
+    width: 100vh;
     background: transparent;
     border: 2px solid rgba(255, 255,  255, .2);
     backdrop-filter: blur(20px);
@@ -56,7 +56,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color:#fff;
+    color:#ffffff79;
 }
 
 .input-box i {
