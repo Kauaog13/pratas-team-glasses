@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,19 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../public/assets/css/estilo.css">
 </head>
+
 <body>
     <!-- Inclui o Cabeçalho -->
     <div id="header"></div>
 
     <!-- Conteúdo -->
-    <main class="container my-5">
+    <main class="container my-5 p-5 bg-light rounded shadow">
         <h1 class="text-center mb-4">Finalizar Compra</h1>
 
         <div class="row">
             <!-- Informações de Envio -->
             <div class="col-md-8">
-                <h3>Endereço de Envio</h3>
+                <h3 class="mb-3">Endereço de Envio</h3>
                 <form>
                     <div class="mb-3">
                         <label for="fullName" class="form-label">Nome Completo</label>
@@ -52,7 +54,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Resumo do Pedido</h5>
+                        <h5 class="mb-0">Resumo do Pedido</h5>
                     </div>
                     <div class="card-body">
                         <ul class="list-unstyled">
@@ -65,8 +67,8 @@
                                 <span>R$ 15,00</span>
                             </li>
                             <li class="d-flex justify-content-between">
-                                <span><strong>Total</strong></span>
-                                <span><strong>R$ 214,97</strong></span>
+                                <span style="color: green"><strong>Total</strong></span>
+                                <span style="color: green"><strong>R$ 214,97</strong></span>
                             </li>
                         </ul>
                     </div>
@@ -77,15 +79,17 @@
         <!-- Informações de Pagamento -->
         <div class="row mt-5">
             <div class="col-md-8">
-                <h3>Informações de Pagamento</h3>
+                <h3 class="mb-3">Informações de Pagamento</h3>
                 <form>
                     <div class="mb-3">
                         <label for="cardName" class="form-label">Nome no Cartão</label>
-                        <input type="text" class="form-control" id="cardName" placeholder="Nome conforme no cartão" required>
+                        <input type="text" class="form-control" id="cardName" placeholder="Nome conforme no cartão"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="cardNumber" class="form-label">Número do Cartão</label>
-                        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="expiration" class="form-label">Validade</label>
@@ -101,8 +105,8 @@
 
         <!-- Botão de Finalizar Compra -->
         <div class="d-flex justify-content-between mt-4">
-            <button class="btn btn-secondary">Voltar ao Carrinho</button>
-            <button class="btn btn-primary">Finalizar Compra</button>
+            <button class="btn btn-dark">Voltar ao Carrinho</button>
+            <button class="btn btn-success">Finalizar Compra</button>
         </div>
     </main>
 
@@ -110,4 +114,5 @@
     <div id="footer"></div>
 
 </body>
+
 </html>
