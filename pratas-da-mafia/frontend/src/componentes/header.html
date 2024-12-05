@@ -76,6 +76,90 @@
     </div>
 </nav>
 
+<style>
+    /* resets */
+    /* Removendo margens e paddings padrões */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Removendo decoração de links */
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Removendo estilos de listas */
+    ul {
+      list-style: none;
+    }
+
+    /* Estilo padrão para listas */
+    ul {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+
+    /* Estilo principal */
+    /* Exibindo listas como flexbox */
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* Estilo para itens da lista */
+    li {
+      position: relative;
+      padding-inline: 1em;
+      padding-block: 0.5em;
+      overflow-x: hidden;
+    }
+
+    /* Efeito de hover para itens da lista */
+    li::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 7px;
+      background-color: hsl(0, 0%, 55%);
+
+      scale: 0 1;
+
+      transition-timing-function: ease;
+      transition-duration: 250ms;
+      transition-property: scale, translate;
+    }
+
+    /* Efeito de hover para itens da lista */
+    li:hover::after {
+      scale: 1 1;
+    }
+
+    /* Suporte para seletores :has() */
+    @supports (selector(:has(*))) {
+      /* Efeito de hover para itens adjacentes */
+      li:hover + li::after {
+        translate: -100% 0;
+      }
+
+      /* Efeito de hover para itens que contenham outros itens */
+      li:has(+ li:hover)::after {
+        translate: 100% 0;
+      }
+    }
+</style>
+
 <!-- Carousel (Slider) -->
 <!--<section id="carouselSection">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
