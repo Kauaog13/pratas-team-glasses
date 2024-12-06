@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,84 +9,95 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../public/assets/css/estilo.css">
 </head>
+
 <body>
     <!-- Inclui o Cabeçalho -->
     <div id="header"></div>
 
     <!-- Conteúdo -->
     <main class="container my-5">
-        <h1 class="text-center mb-4">Carrinho de Compras</h1>
+        <h1 class="text-center mb-4 fw-bold text-uppercase">Carrinho de Compras</h1>
 
         <div class="row">
             <!-- Tabela de Carrinho -->
             <div class="col-lg-8">
-                <table class="table table-bordered table-striped">
+                <table class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">Produto</th>
-                            <th scope="col">Quantidade</th>
-                            <th scope="col">Preço Unitário</th>
-                            <th scope="col">Subtotal</th>
-                            <th scope="col">Ação</th>
+                            <th scope="col" class="bg-dark text-white">Produto</th>
+                            <th scope="col" class="bg-dark text-white">Quantidade</th>
+                            <th scope="col" class="bg-dark text-white">Preço Unitário</th>
+                            <th scope="col" class="bg-dark text-white">Subtotal</th>
+                            <th scope="col" class="bg-dark text-white">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="https://via.placeholder.com/100" alt="Produto 1" class="img-fluid me-3">
-                                    <span>Produto 1</span>
+                                    <img src="/pratas-da-mafia/frontend/public/assets/img/Produtos/Masculino/Conjuntos/grumet-duplo-8mm(1).png"
+                                        alt="Produto 1" class="img-fluid me-3"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <span class="fw-bold">Conjunto Duplo Grumet 8mm 70cm/21cm</span>
                                 </div>
                             </td>
                             <td>
-                                <input type="number" class="form-control" value="1" min="1">
+                                <div class="d-flex justify-content-center mt-4" >
+                                    <input type="number" class="form-control" value="1" min="1" style="width: 50px;">
+                                </div>
                             </td>
-                            <td>R$ 99,99</td>
-                            <td>R$ 99,99</td>
-                            <td><button class="btn btn-danger">Remover</button></td>
+                            <td style="align-content: center;">R$ 99,99</td>
+                            <td style="align-content: center;">R$ 99,99</td>
+                            <td><button class="btn btn-secondary mt-4 w-100">Remover</button></td>
                         </tr>
                         <tr>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img src="https://via.placeholder.com/100" alt="Produto 2" class="img-fluid me-3">
-                                    <span>Produto 2</span>
+                                    <img src="/pratas-da-mafia/frontend/public/assets/img/Produtos/Feminino/Conjuntos/conjunto-laminada.png"
+                                        alt="Produto 2" class="img-fluid me-3"
+                                        style="width: 100px; height: 100px; object-fit: cover;">
+                                    <span class="fw-bold">Conjunto Laminado 45cm/18cm</span>
                                 </div>
                             </td>
                             <td>
-                                <input type="number" class="form-control" value="2" min="1">
+                                <div class="d-flex justify-content-center mt-4">
+                                    <input type="number" class="form-control" value="2" min="1" style="width: 50px;">
+                                </div>
                             </td>
-                            <td>R$ 49,99</td>
-                            <td>R$ 99,98</td>
-                            <td><button class="btn btn-danger">Remover</button></td>
+                            <td style="align-content: center;">R$ 49,99</td>
+                            <td style="align-content: center;">R$ 99,98</td>
+                            <td><button class="btn btn-secondary mt-4 w-100">Remover</button></td>
+
                         </tr>
                     </tbody>
                 </table>
 
                 <div class="d-flex justify-content-between mb-3">
-                    <button class="btn btn-secondary">Atualizar Carrinho</button>
-                    <button class="btn btn-primary">Finalizar Compra</button>
+                    <button class="btn btn-dark">Atualizar Carrinho</button>
+                    <button class="btn btn-success">Finalizar Compra</button>
                 </div>
             </div>
 
             <!-- Resumo do Carrinho -->
             <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Resumo do Carrinho</h5>
+                <div class="card border-0 shadow-sm" style="border-radius: 10px;">
+                    <div class="card-header bg-dark text-white" style="border-radius: 10px 10px 0 0;">
+                        <h5 class="mb-0">Resumo do Carrinho</h5>
                     </div>
                     <div class="card-body">
                         <ul class="list-unstyled">
                             <li class="d-flex justify-content-between">
-                                <span>Subtotal</span>
+                                <span class="fw-bold">Subtotal</span>
                                 <span>R$ 199,97</span>
                             </li>
                             <li class="d-flex justify-content-between">
-                                <span>Frete</span>
+                                <span class="fw-bold">Frete</span>
                                 <span>R$ 15,00</span>
                             </li>
                             <li class="d-flex justify-content-between">
-                                <span><strong>Total</strong></span>
-                                <span><strong>R$ 214,97</strong></span>
+                                <span class="fw-bold text-uppercase text-success">Total</span>
+                                <span class="fw-bold text-uppercase text-success">R$ 214,97</span>
+                            </li>
                             </li>
                         </ul>
 
@@ -93,16 +105,24 @@
                         <div class="mb-3">
                             <label for="coupon" class="form-label">Código do Cupom</label>
                             <input type="text" id="coupon" class="form-control" placeholder="Insira o código">
-                            <button class="btn btn-success mt-2">Aplicar Cupom</button>
+                            <button class="btn btn-dark mt-2">Aplicar Cupom</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
     <!-- Inclui o Rodapé -->
     <div id="footer"></div>
 
+    <style>
+        body {
+            background-image: url('/pratas-da-mafia/frontend/public/assets/img/Wallpapers/white-simple-textured-design-background.jpg');
+            font-family: 'Poppins', sans-serif;
+            /* Fonte padrão */
+        }
+    </style>
+
 </body>
+
 </html>

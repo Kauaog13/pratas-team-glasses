@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,74 +11,165 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../public/assets/css/estilo.css">
 </head>
+
 <body>
 
-<!-- Header -->
-<header style="background-color:#0D0D0D;" class="py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <img src="/pratas-da-mafia/frontend/public/assets/img/Logos/logo-principal-recortada-whrite.png" alt="Logo" class="logo" width="150px">
-        <div class="d-flex align-items-center">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar produtos">
-                <button class="btn btn-outline-light">
-                    <i class="fa fa-search"></i>
-                </button>
+    <!-- Header -->
+    <header style="background-color:#0D0D0D;" class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="/pratas-da-mafia/frontend/public/assets/img/Logos/logo-principal-recortada-whrite.png" alt="Logo"
+                class="logo" width="150px">
+            <div class="d-flex align-items-center">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar produtos" style="width: 200px; height: 30px;">
+                    <button class="btn btn-outline-light" style="font-size: 10px; padding: 2px 5px;">
+                        <i class="fa fa-search" style="font-size: 12px;"></i>
+                    </button>
+                </div>
+                <a href="#" class="ms-4 text-white"><i class="fa fa-user"></i></a>
+                <a href="#" class="ms-4 text-white"><i class="fa fa-shopping-cart"></i></a>
             </div>
-            <button class="btn btn-outline-light ms-2"><i class="fa fa-user"></i> Login</button>
-            <button class="btn btn-outline-light ms-2"><i class="fa fa-shopping-cart"></i> Carrinho</button>
         </div>
-    </div>
-</header>
+    </header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #A6A6A6;">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <!-- Categorias -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown1" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
-                    <ul class="dropdown-menu" aria-labelledby="categoriesDropdown1">
-                        <li><a class="dropdown-item" href="#">Conjuntos</a></li>
-                        <li><a class="dropdown-item" href="#">Pulseiras</a></li>
-                        <li><a class="dropdown-item" href="#">Correntes</a></li>
-                    </ul>
-                </li>
-                <!-- Início -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Início</a>
-                </li>
-                <!-- Serviços -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown2" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
-                    <ul class="dropdown-menu" aria-labelledby="categoriesDropdown2">
-                        <li><a class="dropdown-item" href="#">Nossos Serviços</a></li>
-                        <li><a class="dropdown-item" href="#">Orçamento Online</a></li>
-                        <li><a class="dropdown-item" href="#">Consultar OS</a></li>
-                    </ul>
-                </li>
-                <!-- Sobre -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown3" data-bs-toggle="dropdown" aria-expanded="false">Sobre</a>
-                    <ul class="dropdown-menu" aria-labelledby="categoriesDropdown3">
-                        <li><a class="dropdown-item" href="#">Sobre a Loja</a></li>
-                        <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
-                    </ul>
-                </li>
-                <!-- Contato -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #A6A6A6; height: 40px;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Categorias -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown1" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-family:  PT Sans, sans-serif">Categorias</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown1">
+                            <li><a class="dropdown-item" href="#">Conjuntos</a></li>
+                            <li><a class="dropdown-item" href="#">Pulseiras</a></li>
+                            <li><a class="dropdown-item" href="#">Correntes</a></li>
+                        </ul>
+                    </li>
+                    <!-- Início -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-family:  PT Sans, sans-serif">Início</a>
+                    </li>
+                    <!-- Serviços -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown2" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-family:  PT Sans, sans-serif">Serviços</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown2">
+                            <li><a class="dropdown-item" href="#">Nossos Serviços</a></li>
+                            <li><a class="dropdown-item" href="#">Orçamento Online</a></li>
+                            <li><a class="dropdown-item" href="#">Consultar OS</a></li>
+                        </ul>
+                    </li>
+                    <!-- Sobre -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown3" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-family:  PT Sans, sans-serif">Sobre</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown3">
+                            <li><a class="dropdown-item" href="#">Sobre a Loja</a></li>
+                            <li><a class="dropdown-item" href="#">Sobre Nós</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contato -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-family:  PT Sans, sans-serif">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Carousel (Slider) -->
-<!--<section id="carouselSection">
+    <style>
+        /* resets */
+        /* Removendo margens e paddings padrões */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Removendo decoração de links */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Removendo estilos de listas */
+        ul {
+            list-style: none;
+        }
+
+        /* Estilo padrão para listas */
+        ul {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+
+        /* Estilo principal */
+        /* Exibindo listas como flexbox */
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Estilo para itens da lista */
+        li {
+            position: relative;
+            padding-inline: 1em;
+            padding-block: 0.5em;
+            overflow-x: hidden;
+        }
+
+        /* Efeito de hover para itens da lista */
+        li::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 7px;
+            background-color: hsl(0, 0%, 55%);
+
+            scale: 0 1;
+
+            transition-timing-function: ease;
+            transition-duration: 250ms;
+            transition-property: scale, translate;
+        }
+
+        /* Efeito de hover para itens da lista */
+        li:hover::after {
+            scale: 1 1;
+        }
+
+        /* Suporte para seletores :has() */
+        @supports (selector(:has(*))) {
+
+            /* Efeito de hover para itens adjacentes */
+            li:hover+li::after {
+                translate: -100% 0;
+            }
+
+            /* Efeito de hover para itens que contenham outros itens */
+            li:has(+ li:hover)::after {
+                translate: 100% 0;
+            }
+        }
+    </style>
+
+    <!-- Carousel (Slider) -->
+    <!--<section id="carouselSection">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
