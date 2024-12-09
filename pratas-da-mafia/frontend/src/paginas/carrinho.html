@@ -16,7 +16,8 @@
 
     <!-- Conteúdo -->
     <main class="container my-5">
-        <h1 class="text-center mb-4 fw-bold text-uppercase">Carrinho de Compras</h1>
+        <h1 class="text-center mb-4 fw-bold text-uppercase" id="titulos">Carrinho de Compras</h1>
+        <br><br><br>
 
         <div class="row">
             <!-- Tabela de Carrinho -->
@@ -24,11 +25,11 @@
                 <table class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
-                            <th scope="col" class="bg-dark text-white">Produto</th>
-                            <th scope="col" class="bg-dark text-white">Quantidade</th>
-                            <th scope="col" class="bg-dark text-white">Preço Unitário</th>
-                            <th scope="col" class="bg-dark text-white">Subtotal</th>
-                            <th scope="col" class="bg-dark text-white">Ação</th>
+                            <th scope="col" class="bg-dark text-white text-center align-middle">Produto</th>
+                            <th scope="col" class="bg-dark text-white text-center align-middle">Quantidade</th>
+                            <th scope="col" class="bg-dark text-white text-center align-middle">Preço Unitário</th>
+                            <th scope="col" class="bg-dark text-white text-center align-middle">Subtotal</th>
+                            <th scope="col" class="bg-dark text-white text-center align-middle">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -42,13 +43,14 @@
                                 </div>
                             </td>
                             <td>
-                                <div class="d-flex justify-content-center mt-4" >
+                                <div class="d-flex justify-content-center mt-4">
                                     <input type="number" class="form-control" value="1" min="1" style="width: 50px;">
                                 </div>
                             </td>
                             <td style="align-content: center;">R$ 99,99</td>
                             <td style="align-content: center;">R$ 99,99</td>
-                            <td><button class="btn btn-secondary mt-4 w-100">Remover</button></td>
+                            <td><button class="btn btn-secondary mt-4 w-80" style="font-size: 14px;">Remover</button>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -66,15 +68,18 @@
                             </td>
                             <td style="align-content: center;">R$ 49,99</td>
                             <td style="align-content: center;">R$ 99,98</td>
-                            <td><button class="btn btn-secondary mt-4 w-100">Remover</button></td>
+                            <td><button class="btn btn-secondary mt-4 w-80" style="font-size: 14px;">Remover</button>
+                            </td>
 
                         </tr>
                     </tbody>
                 </table>
 
                 <div class="d-flex justify-content-between mb-3">
-                    <button class="btn btn-dark">Atualizar Carrinho</button>
-                    <button class="btn btn-success">Finalizar Compra</button>
+                    <button class="btn btn-dark" onclick="location.reload()">Atualizar Carrinho</button>
+
+                    <a href="/pratas-da-mafia/frontend/src/paginas/finalizarCompra.html"><button
+                            class="btn btn-success">Finalizar Compra</button></a>
                 </div>
             </div>
 
@@ -105,7 +110,7 @@
                         <div class="mb-3">
                             <label for="coupon" class="form-label">Código do Cupom</label>
                             <input type="text" id="coupon" class="form-control" placeholder="Insira o código">
-                            <button class="btn btn-dark mt-2">Aplicar Cupom</button>
+                            <button class="btn btn-success mt-2">Aplicar Cupom</button>
                         </div>
                     </div>
                 </div>
