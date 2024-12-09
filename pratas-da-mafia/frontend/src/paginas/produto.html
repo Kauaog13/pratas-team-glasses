@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto - Loja</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/pratas-da-mafia/frontend/public/assets/css/estilo.css">
+    <link rel="stylesheet" href="../../public/assets/css/estilo.css">
+    <link rel="shortcut icon" href="/pratas-da-mafia/frontend/public/assets/img/Logos/Icons-original/Logo site chapeu.ico" type="image/x-icon">
 </head>
-
 <body>
     <!-- Inclui o Cabeçalho -->
     <div id="header"></div>
@@ -19,60 +18,61 @@
         <div class="row">
             <!-- Imagem do Produto -->
             <div class="col-md-6">
-            <img src="/pratas-da-mafia/frontend/public/assets/img/Produtos/Masculino/Conjuntos/grumet-6mm(2).jpg" class="img-fluid" style="width: 100px; align-items: center;">
-<!-- Detalhes do Produto -->
-        <div class="col-md-6">
+                <img src="/pratas-da-mafia/frontend/public/assets/img/Produtos/Masculino/Conjuntos/grumet-6mm(2).jpg" alt="Conjunto grumet-6mm" class="img-fluid" width="430px;" style="border-radius: 10px;">
+            </div>
+
+            <!-- Detalhes do Produto -->
+            <div class="col-md-6">
                 <h2 id="titulos">Conjunto Grumet 6mm</h2>
-                <p id="textos" class="text-muted"> <i> Conjuntos</i></p>
+                <i id="textos" class="text-muted">Conjuntos</i>
                 <h3 class="text-success">R$ 454,32</h3>
 
                 <p id="textos" class="mt-4">Exiba estilo e sofisticação com o conjunto Grumet 1x1. Um clássico
                     indispensável, perfeito para quem busca elegância e durabilidade em um design marcante.</p>
-
-                <ul id="textos">
-                    <strong id="titulos">Características:</strong>
+                <hr>
+                <ul id="textos" >
+                    <strong>Características:</strong>
                     <li> <b>Modelo:</b> Grumet 1x1</li>
                     <li> <b>Material: </b> Prata 925 legítima</li>
                     <li> <b> Corrente:</b> 70cm de comprimento, 6mm de espessura</li>
                     <li> <b>Pulseira:</b> 21cm de comprimento, 6mm de espessura</li>
                     <li> <b>Fecho:</b> Tipo mosquete </li>
                 </ul>
-                <hr>
+
                 <div class="mt-4">
                     <label id="titulos" for="quantidade" class="form-label">Quantidade</label>
-                    <input type="number" id="quantidade" class="form-control" value="1" min="1" max="10"
-                        style="width: 50px; height: 35px;">
+                    <input type="number" id="quantidade" class="form-control" value="1" min="1" max="10"    style="width: 50px; height: 35px;">
                 </div>
 
-                <button class="btn btn-dark mt-4 w-100 " id="botao">Adicionar ao Carrinho</button>
-                <button class="btn btn-success mt-2 w-100 " id="botao">Comprar Agora</button>
+                <button class="btn btn-dark mt-4 w-100">Adicionar ao Carrinho</button>
+                <button class="btn btn-success mt-2 w-100">Comprar Agora</button>
             </div>
         </div>
 
         <!-- Descrição Detalhada -->
         <section class="mt-5">
-            <h4 id="titulos">Descrição Detalhada</h4>
-            <p id="textos"> Para quem valoriza estilo e autenticidade, o Conjunto Grumet 1x1 6mm é mais que um
+            <h4 id="titulos" >Descrição Detalhada</h4>
+            <p id="textos">Para quem valoriza estilo e autenticidade, o Conjunto Grumet 1x1 6mm é mais que um
                 acessório, é uma declaração de poder e personalidade. Com design robusto e acabamento impecável, este
                 conjunto reflete a essência da Pratas da Máfia: joias feitas para quem domina o próprio caminho.
-
+                <br>
                 Composto por uma corrente de 70cm e uma pulseira de 21cm, ambas em prata de alta qualidade, o conjunto
                 oferece brilho duradouro e resistência que acompanham qualquer ocasião, do casual ao sofisticado.
-                Perfeito para destacar seu visual com a ousadia e a elegância que você merece.
-            </p>
-            <p style="font-style: italic;">Pratas da Máfia: estilo que impõe respeito.</p>
+                Perfeito para destacar seu visual com a ousadia e a elegância que você merece.</p>
+                <i style="font-style: italic;">Pratas da Máfia: estilo que impõe respeito.</i>
         </section>
 
         <!-- Avaliações -->
         <section class="mt-5">
-            <h4 id="titulos">Avaliações</h4>
-            <p id="textos">Não há avaliações para este produto ainda. Seja o primeiro a avaliar!</p>
-            <button class="btn btn-secondary" id="botao">Deixar uma Avaliação</button>
+            <h4>Avaliações</h4>
+            <p>Não há avaliações para este produto ainda. Seja o primeiro a avaliar!</p>
+            <button class="btn btn-secondary">Deixar uma Avaliação</button>
         </section>
     </main>
 
     <!-- Inclui o Rodapé -->
     <div id="footer"></div>
+
 
     <style>
         /*add fontes*/
@@ -99,7 +99,7 @@
         }
 
         body {
-            background-image: url('/pratas-tg/pratas-da-mafia/frontend/public/assets/img/Wallpapers/white-simple-textured-design-background.jpg');
+            background-image: url('/pratas-da-mafia/frontend/public/assets/img/Wallpapers/white-simple-textured-design-background.jpg');
             font-family: 'Poppins', sans-serif;
             /* Fonte padrão */
        }
