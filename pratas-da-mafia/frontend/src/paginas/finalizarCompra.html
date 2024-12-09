@@ -16,12 +16,12 @@
 
     <!-- Conteúdo -->
     <main class="container my-5 p-5 bg-light rounded shadow">
-        <h1 class="text-center mb-4">Finalizar Compra</h1>
+        <h1 class="text-center mb-4" id="titulos" >Finalizar Compra</h1>
 
         <div class="row">
             <!-- Informações de Envio -->
             <div class="col-md-8">
-                <h3 class="mb-3">Endereço de Envio</h3>
+                <h3 class="mb-3" id="titulos" >Endereço de Envio</h3>
                 <form>
                     <div class="mb-3">
                         <label for="fullName" class="form-label">Nome Completo</label>
@@ -53,8 +53,8 @@
             <!-- Resumo do Pedido -->
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">
-                        <h5 class="mb-0">Resumo do Pedido</h5>
+                    <div class="card-header bg-dark text-white" style="border-radius: 10px 10px 0 0;">
+                        <h5 class="mb-0" id="titulos" >Resumo do Pedido</h5>
                     </div>
                     <div class="card-body">
                         <ul class="list-unstyled">
@@ -79,7 +79,7 @@
         <!-- Informações de Pagamento -->
         <div class="row mt-5">
             <div class="col-md-8">
-                <h3 class="mb-3">Informações de Pagamento</h3>
+                <h3 class="mb-3" id="titulos" >Informações de Pagamento</h3>
                 <form>
                     <div class="mb-3">
                         <label for="cardName" class="form-label">Nome no Cartão</label>
@@ -105,8 +105,12 @@
 
         <!-- Botão de Finalizar Compra -->
         <div class="d-flex justify-content-between mt-4">
-            <button class="btn btn-dark">Voltar ao Carrinho</button>
-            <button class="btn btn-success">Finalizar Compra</button>
+            
+            <a href="/pratas-da-mafia/frontend/src/paginas/carrinho.html">   <button class="btn btn-dark">Voltar ao Carrinho</button> </a>
+
+            <a href="/pratas-da-mafia/frontend/src/paginas/pedidoRealizado.html">  <button class="btn btn-success" > Finalizar Compra</button> </a>
+          
+            
         </div>
     </main>
 
@@ -114,5 +118,13 @@
     <div id="footer"></div>
 
 </body>
+
+<style>
+    body {
+    background-image: url('/pratas-da-mafia/frontend/public/assets/img/Wallpapers/white-simple-textured-design-background.jpg');
+    font-family: 'Poppins', sans-serif;
+    /* Fonte padrão */
+}
+</style>
 
 </html>
